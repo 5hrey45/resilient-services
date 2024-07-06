@@ -8,7 +8,7 @@ of three distinct services, each serving a specific purpose.
 
 - **Accountservice**: Facilitates customer integration with the platform using account.
 - **Loanservice**: Used for creating a new debt associated with a customer or fetching the existing data.
-- **Cardservice**: Maintains data regarding existing credit card of a customer or issuing a new one. 
+- **Cardservice**: Maintains data regarding existing credit card of a customer or issuing a new one.
 
 Apart from these services, other services required for the microservices network such as an Edge server (AKA API gateway) for accessing the service network as well as Netflix Eureka server is used for service discovery and registration.
 
@@ -154,20 +154,20 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `created_at` date NOT NULL,
   `created_by` varchar(20) NOT NULL,
   `updated_at` date DEFAULT NULL,
-    `updated_by` varchar(20) DEFAULT NULL
+  `updated_by` varchar(20) DEFAULT NULL
 );
 ```
 
 ```
 CREATE TABLE IF NOT EXISTS `account` (
   `customer_id` int NOT NULL,
-   `account_number` int AUTO_INCREMENT  PRIMARY KEY,
+  `account_number` int AUTO_INCREMENT  PRIMARY KEY,
   `account_type` varchar(100) NOT NULL,
   `branch_address` varchar(200) NOT NULL,
   `created_at` date NOT NULL,
-   `created_by` varchar(20) NOT NULL,
-   `updated_at` date DEFAULT NULL,
-    `updated_by` varchar(20) DEFAULT NULL
+  `created_by` varchar(20) NOT NULL,
+  `updated_at` date DEFAULT NULL,
+  `updated_by` varchar(20) DEFAULT NULL
 );
 ```
 
