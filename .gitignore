@@ -1,0 +1,7 @@
+.idea
+accountservice/target
+cardservice/target
+loanservice/target
+configserver/target
+eurekaserver/target
+gatewayserver/target
