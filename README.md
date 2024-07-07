@@ -14,6 +14,7 @@ Apart from these services, other services required for the microservices network
 
 ## Table of Contents
 
+- [Application Architecture](#application-architecture)
 - [Project structure](#project-structure)
 - [Database](#database)
   - [Definition](#definition)
@@ -31,6 +32,10 @@ Apart from these services, other services required for the microservices network
 - [Running the project](#running-the-project)
   - [Dependencies](#dependencies)
 - [Areas for Improvement](#to-dos-and-areas-for-improvement)
+
+## Application Architecture
+
+![app_arch](images/App_arch.png)
 
 ## Project structure
 
@@ -144,6 +149,8 @@ The database consists of 4 tables (including 1 for migration):
 - **card**: Customer credit card details.
 
 ### Schema
+
+![schema](images/Schema.png)
 
 ```
 CREATE TABLE IF NOT EXISTS `customer` (
